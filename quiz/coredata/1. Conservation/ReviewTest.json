@@ -1,0 +1,81 @@
+{
+    "qas": [
+        {
+            "question": "A community of living things interacting with one another and with their physical environment is called:",
+            "answers": [
+                "Ecosystem",
+                "Organism",
+                "Population",
+                "Habitat"
+            ]
+        },
+        {
+            "question": "What are the four fundamental needs for all living things?",
+            "answers": [
+                "Food, shelter, water, space.",
+                "Food, space, water, friendship.",
+                "Shelter, space, stability, succession.",
+                "Stability, succession, food, shelter."
+            ]
+        },
+        {
+            "question": "Fill in the blank: In British Columbia, the carrying capacity of many wildlife habitats is determined by __________ weather.",
+            "answers": [
+                "Winter",
+                "Spring",
+                "Summer",
+                "Fall"
+            ]
+        },
+        {
+            "question": "In a General Open Hunting Season you can shoot as much wildlife as you wish",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "The protection of wildlife falls solely under provincial legislation",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "The two types of hunting seasons found in British Columbia are:",
+            "answers": [
+                "General Open Hunting Season and Limited Entry Hunting Season.",
+                "Limited Entry Hunting Season and Kill Everything That Moves Hunting Season.",
+                "General Open Hunting Season and Limited Slip Differential Hunting Season.",
+                "Limited Slip Differential Hunting Season and General Grabber Hunting Season."
+            ]
+        },
+        {
+            "question": "Select the best definition for 'Habitat':",
+            "answers": [
+                "The place where an organism lives in a community, its 'home'.",
+                "The place where an organism sheds its skin.",
+                "The populations of plants and animals living and interacting with one another in a given location.",
+                "A living thing that can function on its own."
+            ]
+        },
+        {
+            "question": "Select the best definition for 'Carrying Capacity':",
+            "answers": [
+                "The number of animals that an area will support without damage to the habitat or to the animals.",
+                "The populations of plants and animals living and interacting with one another in a given location.",
+                "Habitat Change.",
+                "The number of animals that can be carried in the bed of a Ford F150 pickup truck."
+            ]
+        },
+        {
+            "question": "Select the best definition for 'Succession':",
+            "answers": [
+                "The natural changes in a system resulting from the interactions between the soil, plants and the animals in the area.",
+                "The animals that move into a habitat when other animals leave.",
+                "Completing a hunt lawfully by harvesting a game animal.",
+                "Passing on the tradition of hunting to younger generations."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "qas": [
+        {
+            "question": "Horns are shed each year",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "Dalls and Stone Sheep are",
+            "answers": [
+                "Thinhorn Sheep",
+                "California Bighorn Sheep",
+                "All-white wild sheep",
+                "Rocky Mountain Bighorn Sheep"
+            ]
+        },
+        {
+            "question": "You can tell the age of a ram by:",
+            "answers": [
+                "The annuli on it's horns",
+                "The size of the animal",
+                "The length of the horns",
+                "The points on the antlers",
+                "Taking a core sample"
+            ]
+        },
+        {
+            "question": "An animal that feeds mostly on leaves twigs and shoots is a/an:",
+            "answers": [
+                "Browser",
+                "Omnivore",
+                "Carnivore",
+                "Grazer"
+            ]
+        },
+        {
+            "question": "The deer mostly found in coastal areas of BC is the:",
+            "answers": [
+                "Black-tail deer",
+                "White-tail deer",
+                "Fallow deer",
+                "Mule deer"
+            ]
+        },
+        {
+            "question": "This deer was introduced to British Columbia.  It is the:",
+            "answers": [
+                "Fallow deer",
+                "White-tail deer",
+                "Mule deer",
+                "Black-tail deer"
+            ]
+        },
+        {
+            "question": "You can tell a white-tail deer from a mule deer by:",
+            "answers": [
+                "All of the above",
+                "Its undulating leaps",
+                "Its flagging Tail",
+                "Its small ears"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "qas": [
+        {
+            "question": "Who are the primary officials for enforcing hunting laws?",
+            "answers": [
+                "Conservation Officers",
+                "Bylaw officers",
+                "Police officers",
+                "Firefighters"
+            ]
+        },
+        {
+            "question": "What is the purpose of the Report a Polluter, Poacher Program (RAPP)?",
+            "answers": [
+                "To set out guidelines to help you report persons who violate hunting laws.",
+                "To keep people from incorrectly categorizing their recyclables",
+                "To set out guidelines under which you can make a citizens' arrest of polluters and poachers",
+                "To provide a mechanism to enforce a protocol of politeness among hunters"
+            ]
+        },
+        {
+            "question": "What are two examples of municipal (town) bylaws?",
+            "answers": [
+                "Noise abatement bylaw and No discharge of firearms bylaw",
+                "No shooting zone bylaw and No motor vehicles bylaw",
+                "No idling bylaw and No loitering bylaw",
+                "No rottweilers bylaw and No cowbell bylaw"
+            ]
+        },
+        {
+            "question": "It is legal to use bait to hunt black bear.",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "What is the bag limit for skunks in region 2?",
+            "answers": [
+                "no bag limit",
+                "1",
+                "2",
+                "5"
+            ]
+        },
+        {
+            "question": "What is the last day you can hunt for black bear in region 2?",
+            "answers": [
+                "November 30",
+                "October 15",
+                "October 30",
+                "December 31"
+            ]
+        },
+        {
+            "question": "It is legal to shoot a shotgun using lead shot when hunting waterfowl?",
+            "answers": [
+                "False",
+                "True"
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,125 @@
+{
+    "qas": [
+        {
+            "question": "Three common types of sights are:",
+            "answers": [
+                "Open, Aperture, Telescopic",
+                "Open, Telescopic, Parabolic",
+                "Aperture, Open, Telepathic",
+                "Telescopic, Button, Atabatic"
+            ]
+        },
+        {
+            "question": "A telescopic sight may be used for:",
+            "answers": [
+                "Placing your aim point on an animal that you have determined is legal and safe to harvest",
+                "Determining the number of antler tines on a downrange animal to assess whether it is legal to harvest",
+                "Identifying movement in the bush"
+            ]
+        },
+        {
+            "question": "A legitimate way of rendering a firearm inoperable for storage is:",
+            "answers": [
+                "Remove the bolt or bolt carrier",
+                "Hanging it on the wall more than 6 feet above the floor",
+                "Hiding it behind books on a shelf",
+                "Locking it in your car"
+            ]
+        },
+        {
+            "question": "It is legal to store ammunition in the same locked container that the firearm is stored in:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "In a remote wilderness area, a non-restricted firearm can be kept handy and unlocked:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "The components of centrefire ammunition are:",
+            "answers": [
+                "Case, Primer, Powder, Bullet",
+                "Base, Hull, Primer, Powder, Wad, Shot",
+                "Cartridge, Powder, Bullet",
+                "Round, Shot, Powder"
+            ]
+        },
+        {
+            "question": "To PROVE a lever action rifle with a tubular magazine, you:",
+            "answers": [
+                "Must operate the lever several times to make sure the contents of the magazine have been ejected",
+                "Must use an extraction tool to remove the contents of the tubular magazine",
+                "Have no need to remove ammunition from the magazine",
+                "Must remove the lever in addition to the magazine"
+            ]
+        },
+        {
+            "question": "To PROVE a semi-automatic firearm, you:",
+            "answers": [
+                "Must remove the magazine and then operate the cocking lever to eject the ammunition in the chamber",
+                "Must operate the cocking lever to eject the ammunition in the chamber, and then remove the magazine",
+                "Should put your finger in the action to see if the chamber is empty",
+                "Must remove the action to PROVE the firearm is safe"
+            ]
+        },
+        {
+            "question": "The 3 parts of a firearm barrel are:",
+            "answers": [
+                "Chamber, bore, muzzle",
+                "Firing pin, trigger, safety",
+                "Safety, chamber, muzzle",
+                "Muzzle, sights, stock"
+            ]
+        },
+        {
+            "question": "The ACTS acronym stands for:",
+            "answers": [
+                "Assume every firearm to be loaded; Control the muzzle; Trigger Finger - keep your finger off the trigger until ready to fire, See that it is safe, PROVE it is safe",
+                "Assess the situation, Control your breathing, Test the windage, Set your sights on the target",
+                "Aim the firearm, Control your breathing, Trigger - pull the trigger, Savour your harvest"
+            ]
+        },
+        {
+            "question": "The PROVE acronym stands for:",
+            "answers": [
+                "Point the firearm in the safest available direction, Remove all ammunition, Observe the chamber, Verify the feeding path, Examine the bore",
+                "Point the firearm in the safest available direction, Remove all ammunition, Observe the feed path, Verify the bore, Examine the chamber",
+                "Point the firearm in the safest available direction, Remove any obstactles from the barrel, Observe the chamber, Verify the feed path, Examine the magazine",
+                "Point the firearm at the sky, Remove all ammunition, Observe the chamber, Verify the feeding path, Examine the bore"
+            ]
+        },
+        {
+            "question": "When removing ammunition as part of the PROVE procedure:",
+            "answers": [
+                "Remove ammunition from the chamber first, then from the magazine (unless it is a semi-automatic action, in which case remove the magazine and then any ammunition in the chamber)",
+                "Remove any ammunition from the chamber first, then remove the magazine",
+                "Remove the magazine first, then any ammunition in the chamber",                
+                "It doesn't matter whether you remove the ammunition from the chamber first, or remove the magazine first"
+            ]
+        },
+        {
+            "question": "The 'A' in the ACTS acronym stands for:",
+            "answers": [
+                "Assume the firearm to be loaded",
+                "Assume the firearm is loaded if nobody has told you it is already unloaded",
+                "Always check the firearm for damage",                
+                "Always examine the chamber of the firearm"
+            ]
+        },
+        {
+            "question": "The 'R' in the PROVE acronym stands for:",
+            "answers": [
+                "Remove all ammunition",
+                "Remove the magazine",
+                "Remove any ammunition from the chamber of the gun",                
+                "Remove the bore from the magazine"
+            ]
+        }
+    ]
+}
+

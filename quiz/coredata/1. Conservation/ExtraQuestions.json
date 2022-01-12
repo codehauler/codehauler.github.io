@@ -1,0 +1,41 @@
+{
+    "qas": [
+        {
+            "question": "What is ecology?",
+            "answers": [
+                "The science that studies how organisms interact with each other and their environment.",
+                "The populations of plants and animals living and interacting with one another in a given location.",
+                "The science that studies climate change.",
+                "The biology that studies all living things."
+            ]
+        },
+        {
+            "question": "The results of exceeding the carrying capacity of an animal's habitat may include:",
+            "answers": [
+                "Starvation, Disease, Social stress, Parasites",
+                "Starvation, Disease, Succession",
+                "Starvation, Disease, Stability",
+                "Constipation, Social stress, Eating disorder"
+            ]
+        },
+        {
+            "question": "Examples of non-game animals are:",
+            "answers": [
+                "Song birds, Predatory birds, Small mammals, and Amphibians",
+                "Predatory birds, Small mammals, Cougars, Gophers",
+                "Wolves, Bears, Weasels, and Skunks",
+                "Wolves, Bears, Salmon"
+            ]
+        },
+        {
+            "question": "Game animals include:",
+            "answers": [
+                "All of the above",
+                "Big game animals",
+                "Small game animals",
+                "Upland game birds",
+                "Migratory game birds"
+            ]
+        }
+    ]
+}

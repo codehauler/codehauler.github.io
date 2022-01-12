@@ -1,0 +1,58 @@
+{
+    "qas": [
+        {
+            "question": "The speculum on a duck is the:",
+            "answers": [
+                "Coloured patch on the wing",
+                "Duck's droppings",
+                "Feathers shed during the moult",
+                "Moisture on a duck's tongue"
+            ]
+        },
+        {
+            "question": "Ducks with a slow wing beat and a distinct flight formation are:",
+            "answers": [
+                "Dabbling ducks",
+                "Fish-eating ducks",
+                "Sea ducks",
+                "Diving ducks"
+            ]
+        },
+        {
+            "question": "Upland game birds that don't have feathers on their feet and lower legs are:",
+            "answers": [
+                "Introduced non-native species",
+                "Ptarmigan family",
+                "Grouse family",
+                "Migratory game birds"
+            ]
+        },
+        {
+            "question": "This bird is most commonly found year-round in southern BC farmland areas:",
+            "answers": [
+                "Ring-necked pheasant",
+                "Chuckar partridge",
+                "Band-tailed pigeon",
+                "Ruffed Grouse"
+            ]
+        },
+        {
+            "question": "2 birds which often run from danger rather than fly are:",
+            "answers": [
+                "Ring-necked Pheasant and Chuckar",
+                "Band-tailed pigeon and Mourning Dove",
+                "Ruffed and Spruce Grouse",
+                "Mourning Dove and Common Snipe"
+            ]
+        },
+        {
+            "question": "A large white, waterfowl with black wingtips is the:",
+            "answers": [
+                "Snow Goose",
+                "White-Fronted Goose",
+                "Whistling Swan",
+                "Black Brant"
+            ]
+        }
+    ]
+}

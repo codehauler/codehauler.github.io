@@ -1,0 +1,63 @@
+{
+    "qas": [
+        {
+            "question": "Standards of behaviour used by an individual, which are considered to be morally right, are:",
+            "answers": [
+                "Personal Ethics",
+                "Code of Ethics",
+                "Law",
+                "Hunters Pledge"
+            ]
+        },
+        {
+            "question": "An example of acceptable outdoor ethical behaviour",
+            "answers": [
+                "Keeping your fire in your firepit only",
+                "Randomly killing snakes because they hiss at you",
+                "Cutting new trails with your vehicle",
+                "Tearing down old buildings for firewood"
+            ]
+        },
+        {
+            "question": "A positive public attitude towards hunting is important if the opportunities for hunting are to be maintained",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "An ethical hunter will shoot over his or her daily bag limit to help fill their hunting partner's bag limit",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "If you shoot a game animal and it runs away",
+            "answers": [
+                "Wait for 10-15 minutes before pursuing the animal",
+                "Chase after it right away",
+                "Forget it and look for another game animal to shoot",
+                "Take a few shots into the bush before going after the animal"
+            ]
+        },
+        {
+            "question": "After an animal is shot and is dead, before handling it, you must:",
+            "answers": [
+                "Cancel your species license",
+                "Take a picture of it",
+                "Field dress the animal",
+                "Skin the animal"
+            ]
+        },
+        {
+            "question": "A freshly killed animal should never be displayed in public because:",
+            "answers": [
+                "It may offend some people",
+                "It may become contaminated",
+                "It may be stolen",
+                "It is illegal"
+            ]
+        }
+    ]
+}

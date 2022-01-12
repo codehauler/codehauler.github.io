@@ -1,0 +1,70 @@
+{
+    "qas": [
+        {
+            "question": "Which type of firearm does not have a magazine?",
+            "answers": [
+                "Hinge action",
+                "Lever acton",
+                "Semi-automatic action",
+                "Pump action"
+            ]
+        },
+        {
+            "question": "The three main parts of a rifle or shotgun are:",
+            "answers": [
+                "Stock, barrel, action",
+                "Hinge, barrel, stock",
+                "Barrel, stock, magazine",
+                "Muzzle, action, bolt"
+            ]
+        },
+        {
+            "question": "The two types of modern ammunition are rimfire and centerfire",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "A shotgun shell contains multiple projectiles called:",
+            "answers": [
+                "Pellets",
+                "Bullets",
+                "Wads",
+                "Primers"
+            ]
+        },
+        {
+            "question": "300 Savage and 300 Winchester Magnum cartridges are interchangeable",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "When you pick up a firearm, you should always:",
+            "answers": [
+                "Assume the firearm is loaded",
+                "Admire the craftsmanship in the stockwork",
+                "Squeeze the trigger before opening the bolt",
+                "Examine the bore"
+            ]
+        },
+        {
+            "question": "It is legal and safe to store your unloaded firearm under lock and key:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "The steadiest shooting position is:",
+            "answers": [
+                "Prone",
+                "Standing",
+                "Sitting",
+                "Kneeling"
+            ]
+        }
+    ]
+}

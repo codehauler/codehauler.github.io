@@ -1,0 +1,428 @@
+{
+    "qas": [
+        {
+            "question": "A pendant of hair-covered skin that hangs from under the throat of an animal e.g. the moose, is:",
+            "answers": [
+                "Bell or Dewlap",
+                "Uvula",
+                "Goatee",
+                "Dingleberry"
+            ]
+        },
+        {
+            "question": "The metatarsal and tarsal glands on a deer's outside lower leg are used for:",
+            "answers": [
+                "Communication",
+                "Combat",
+                "Mating",
+                "Shelter"
+            ]
+        },
+        {
+            "question": "An ungulate is:",
+            "answers": [
+                "A split-hoofed animal with even toes",
+                "A split-hoofed animal that has horns",
+                "A ruminant",
+                "A deer",
+                "A subspecies of moose"
+            ]
+        },
+        {
+            "question": "A bovid is:",
+            "answers": [
+                "A common term for the Horned Family",
+                "A chocolaty drink",
+                "A split-hoofed animal with even toes",
+                "An animal that feeds mostly on leaves, twigs and shoots."
+            ]
+        },
+        {
+            "question": "Antlers are:",
+            "answers": [
+                "Shed annually",
+                "Never shed",
+                "A solid bony core that is part of the animal's skull covered by a sheath of hard fibrous horn",
+                "Found on both males and females of the bovid species"
+            ]
+        },
+        {
+            "question": "Horns are:",
+            "answers": [
+                "A projection with a solid bony core that is part of the animal's skull covered by a sheath of hard fibrous horn",
+                "Found only on the male of the the bovid species",
+                "Covered by a hairy skin called 'velvet' during their development",
+                "Shed annually"
+            ]
+        },
+        {
+            "question": "Bovid unglulates include:",
+            "answers": [
+                "Mountain goat, thinhorn sheep, bighorn sheep, and bison",
+                "Mountain goat, caribou and fallow deer",
+                "Thinhhorn mountain goats, elk",
+                "Bison, mergansers, and cougars"
+            ]
+        },
+        {
+            "question": "Cervid ungulates include:",
+            "answers": [
+                "Mule deer, fallow deer, whitetail deer, caribou, elk, and moose",
+                "Mule deer, fallow deer, whitetail deer, caribou, elk, and mountain goat",
+                "Elk, Bison, and Caribou",
+                "Caribou, fallow deer, and moose"
+            ]
+        },
+        {
+            "question": "The two species of thinhorn sheep found in BC are:",
+            "answers": [
+                "Dalls and Stone",
+                "California and Rocky Mountain",
+                "Mountain and Willow",
+                "Ruffed and Spruce"
+            ]
+        },
+        {
+            "question": "Dall's sheep are found:",
+            "answers": [
+                "In the extereme Northwest",
+                "Near Kamloops",
+                "In the Kootenays",
+                "Spread across the Northern Mountains"
+            ]
+        },
+        {
+            "question": "Stone sheep are found:",
+            "answers": [
+                "Spread across the Northern Mountains",
+                "In the extereme Northwest",
+                "Near Kamloops",
+                "In the Kootenays"
+            ]
+        },
+        {
+            "question": "Thinhorn Sheep are on average larger than Bighorn Sheep:",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "Dall's sheep are white, Stone's Sheep are dark:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "California and Mountain Bighorn Sheep are found:",
+            "answers": [
+                "In the Southern half of the province",
+                "In California, and the Mountains",
+                "In the Peace region",
+                "On Haida Gwai"
+            ]
+        },
+        {
+            "question": "Mountain Goats Have:",
+            "answers": [
+                "Larger diameter horns with a uniform curve on billies, smaller diameter horns that are straight with a curved tip on nannies",
+                "Whiter colour on billies, darker colour on nannies",
+                "Very short horns on nannies, much longer horns on billies",
+                "Antlers"
+            ]
+        },
+        {
+            "question": "Mountain Goats Are:",
+            "answers": [
+                "Both grazers and browsers",
+                "Grazers",
+                "Browsers",
+                "Inflatable"
+            ]
+        },
+        {
+            "question": "To conform to the Hunting Regulations - Hunters are requested to select Billies only",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Bison bulls and cows are typically the same size",
+            "answers": [
+                "False - bulls are twice the size of cows",
+                "False - bulls are smaller than cows",
+                "True"
+            ]
+        },
+        {
+            "question": "Bison cows have no horns",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "Bison keep their horns year-round",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Fallow deer are a non-native species",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Black-Tailed deer are found",
+            "answers": [
+                "In coastal areas of BC",
+                "In the Southern interior of BC",
+                "In the Northern interior of BC",
+                "In the Kootenays"
+            ]
+        },
+        {
+            "question": "Mule deer are found",
+            "answers": [
+                "Everywhere in BC East of the Coast Mountains",
+                "Everywhere in BC",
+                "In the Southern Interior of BC",
+                "In the Bugaboos"
+            ]
+        },
+        {
+            "question": "When startled, Mule Deer:",
+            "answers": [
+                "Will run with a high, stiff-legged bounce",
+                "Will charge",
+                "Will run with undulating leaps with broad white tails 'flagging'",
+                "Will go to ground"
+            ]
+        },
+        {
+            "question": "A 4-point Mule Deer:",
+            "answers": [
+                "Has at least 4 tines on at least one side, not including brow tine",
+                "Has at least 4 tines on at least one side, including brow tine",
+                "Has a total of 4 tines total counting antler tines on both sides, not including brow tine",
+                "Has a total of 4 tines total counting antler tines on both sides, including brow tine"
+            ]
+        },
+        {
+            "question": "White-Tailed deer are generally:",
+            "answers": [
+                "Smaller than Mule Deer and larger than Fallow Deer",
+                "Smaller than Fallow Deer and larger than Mule Deer",
+                "Larger than both Mule Deer and Fallow Deer",
+                "Smaller than both Mule Deer and Fallow Deer"
+            ]
+        },
+        {
+            "question": "Both Fallow Deer and Moose have palmated antlers:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Moose eat mostly:",
+            "answers": [
+                "Woody browse",
+                "European Milfoil",
+                "German Short-Haired Pointers",
+                "At night"
+            ]
+        },
+        {
+            "question": "Elk live in:",
+            "answers": [
+                "Mountainous areas with habitat as varied as dense coastal forest to semi-open interior forest.",
+                "Plains and farmland areas.",
+                "High-altitude terrain.",
+                "Yurts."
+            ]
+        },
+        {
+            "question": "Caribou are the only ungulate of which both sexes commonly carry antlers:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Cats have 5 toes on the front foot and 4 on the back foot:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Cougars are found:",
+            "answers": [
+                "Mainly south of the Skeena and Peace Rivers in the Coast Mountains, Interior Plateau, and Rocky Mountans, as ell as Vancouver Island.",
+                "Throughout the province.",
+                "Wherever small dogs and children are walked.",
+                "In coastal areas of the province and on Vancouver Island."
+            ]
+        },
+        {
+            "question": "To kill their prey, cougars:",
+            "answers": [
+                "Carefully stalk it, as they are not capable of long chases.",
+                "Chase it for miles.",
+                "Ambush it from depressons in the earth.",
+                "Only hunt in the afternoon."
+            ]
+        },
+        {
+            "question": "A distinctive feature of the cougar is:",
+            "answers": [
+                "It has a long cylindrical tail used for balancing.",
+                "It has ear tufts.",
+                "It has furry footpads.",
+                "It has a black coat in the spring."
+            ]
+        },
+        {
+            "question": "A distinctive feature of the Lynx is:",
+            "answers": [
+                "Long black ear tufts.",
+                "Long bushy tail.",
+                "It is the smallest of the wild cats in BC.",
+                "It's rear legs are shorter than it's front legs."
+            ]
+        },
+        {
+            "question": "Lynx are found:",
+            "answers": [
+                "Throughout BC East of the coast range.",
+                "Only on Vancouver Island.",
+                "Only in the Southern part of the province.",
+                "Only in the Northern part of the province."
+            ]
+        },
+        {
+            "question": "A distinctive feature of the bobcat is:",
+            "answers": [
+                "They have small paws, short legs less conspicuous ear tufts than a lynx.",
+                "It's long cylindrical tail.",
+                "Large paws.",
+                "It is the largest of the wild cats in BC."
+            ]
+        },
+        {
+            "question": "A wolfs tail:",
+            "answers": [
+                "Is held high when running",
+                "Is held low when runningg",
+                "Is detachable",
+                "Distinguishes it from a coyote, which has no tail"
+            ]
+        },
+        {
+            "question": "Wolves are found:",
+            "answers": [
+                "Throughout BC with the exception of Haida Gwaii",
+                "Only in Northern BC",
+                "Only in forests",
+                "A high altitudes"
+            ]
+        },
+        {
+            "question": "Wolves hunt their prey:",
+            "answers": [
+                "By a swift, open chase",
+                "By ambush",
+                "By driving animals toward other wolves",
+                "Only in the morning"
+            ]
+        },
+        {
+            "question": "Wolves:",
+            "answers": [
+                "Are the largest canid in BC",
+                "Are the smallest canid in BC",
+                "Are solitary, antisocial animals",
+                "Hunt mainly small rodents"
+            ]
+        },
+        {
+            "question": "Coyotes can be found:",
+            "answers": [
+                "Throughout BC East of the coastal areas and on the Fraser Delta (not on Vancouver Island or Haida Gwaii)",
+                "Throughout Southern BC",
+                "Only in Northern BC",
+                "Wherever joggers are found",
+                "Only in the Rockies"
+            ]
+        },
+        {
+            "question": "Coyotes carry their tail:",
+            "answers": [
+                "Low, unlike wolves",
+                "High, unlike wolves",
+                "In a handbag"
+            ]
+        },
+        {
+            "question": "Red Fox are found:",
+            "answers": [
+                "Throughout BC East of the coastal mountains",
+                "Only in low-lying farmland",
+                "In woodlands",
+                "In hen-houses"
+            ]
+        },
+        {
+            "question": "Red Fox are:",
+            "answers": [
+                "The smallest of the canid family, smaller than Coyotes",
+                "Larger than coyotes",
+                "Strictly carnivorous",
+                "Always red"
+            ]
+        },
+        {
+            "question": "Black Bears can be found:",
+            "answers": [
+                "Throughout the entire province",
+                "In the interior, East of the coast mountains",
+                "In the coastal islands and West of the coast mountains",
+                "Everywhere in BC except the Peace region"
+            ]
+        },
+        {
+            "question": "Black Bears are:",
+            "answers": [
+                "Omnivorous",
+                "Carnivorous",
+                "Vegetarian",
+                "Pescatarian"
+            ]
+        },
+        {
+            "question": "Black Bears can be distinguished from Grizzly bears by the following characteristics:",
+            "answers": [
+                "Smaller, no shoulder hump, straight face instead of dished",
+                "Smaller, has a shoulder hump, and a dished face",
+                "Larger, black instead of brown",
+                "Smaller, brown instead of black"
+            ]
+        },
+        {
+            "question": "Grizzly bears can be distinguished from Black Bears by the following characteristics:",
+            "answers": [
+                "Larger, has a shoulder hump, dished face instead of straight",
+                "Smaller, no shoulder hump, and a straight face",
+                "Larger, black instead of brown",
+                "Smaller, brown instead of black",
+                "Grizzly poop has bells in it"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "qas": [
+        {
+            "question": "Basic equipment for a hunting trip is:",
+            "answers": [
+                "Compass and maps; survival kit; first-aid kit; firearm and ammunition; communication device.",
+                "First-aid kit, firearm and ammunition.",
+                "Compass and maps and firearm and ammunition.",
+                "Firearm and ammunition."
+            ]
+        },
+        {
+            "question": "A compass works best when:",
+            "answers": [
+                "It is held still and level.",
+                "It is near iron.",
+                "It is kept warm and dry.",
+                "It is fully charged."
+            ]
+        },
+        {
+            "question": "The marked end of a compass needle points:",
+            "answers": [
+                "Magnetic North.",
+                "North.",
+                "South.",
+                "West."
+            ]
+        },
+        {
+            "question": "A trip plan is:",
+            "answers": [
+                "A detailed copy of the planned route and names and contact numbers of individuals on the trip..",
+                "To drive into the woods and hunt.",
+                "A general document left in your desk at work explaining roughly where you will hunt and possibly with whom."
+            ]
+        },
+        {
+            "question": "If you are lost you should:",
+            "answers": [
+                "Stop moving, think about the actions that can improve your chances of survival, observe your situation, plan your actions in a deliberate manner.",
+                "Follow the contour of land down until you find a watercourse and then follow that down until you find a road.",
+                "Speed up and work harder.",
+                "Start a signal fire."
+            ]
+        },
+        {
+            "question": "The two types of fractures are:",
+            "answers": [
+                "Simple or closed fracture, and compound or open fracture.",
+                "Green-stick and ordinary fractures.",
+                "Small and large.",
+                "Arm and leg."
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,103 @@
+{
+    "qas": [
+        {
+            "question": "The four species of grouse found in BC are:",
+            "answers": [
+                "Spruce Grouse, Blue Grouse, Ruffed Grouse, Sharp-tailed Grouse",
+                "Spruce Grouse, Fir Grouse, Cedar Grouse, Pine Grouse",
+                "Willow Grouse, Blue Grouse, Ruffed Grouse, Sharp-tailed Grouse",
+                "Rock Grouse, Gray Grouse, California Grouse, Chukar"
+            ]
+        },
+        {
+            "question": "Spruce Grouse are found mainly in high-elevation conifer forests:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Male Blue Grouse",
+            "answers": [
+                "Have a yellow comb over the eye",
+                "Are found in fields and parkland until mating season",
+                "Have a narrowing, pin-shaped tail",
+                "Make crowing sounds like a rooster"
+            ]
+        },
+        {
+            "question": "Spruce Grouse",
+            "answers": [
+                "Have a gray back, head, neck and shoulders, with black bars",
+                "Nest in lower elevations and otherwise live at higher elevations",
+                "Fly far and fast when flushed",
+                "Are endangered in BC and cannot be hunted"
+            ]
+        },
+        {
+            "question": "A widgeon is classified as:",
+            "answers": [
+                "Dabbling Duck",
+                "Sea Duck",
+                "Shoreline Duck",
+                "Goose",
+                "Peking Duck"
+            ]
+        },
+        {
+            "question": "Snipe are:",
+            "answers": [
+                "Shorebirds",
+                "Marsh birds",
+                "Sea Ducks",
+                "Raptors",
+                "Puddle ducks"
+            ]
+        },
+        {
+            "question": "To hunt ducks or geese, you need a:",
+            "answers": [
+                "Federal Migratory Bird License",
+                "50-Calibre rifle",
+                "Provincial General Hunting License",
+                "Hound Dog"
+            ]
+        },
+        {
+            "question": "Ptarmigan are:",
+            "answers": [
+                "Resident Upland Game Birds",
+                "Ducks",
+                "Introduced Species",
+                "A dirty, dirty bird"
+            ]
+        },
+        {
+            "question": "Ptarmigan, grouse, pheasants, partridges, chuckar, quail and turkey are all:",
+            "answers": [
+                "Gallinaceous",
+                "Chickens",
+                "Deadly when provoked",
+                "Raptors"
+            ]
+        },
+        {
+            "question": "Canada, snow, Ross', white-fronted, black-brant are all:",
+            "answers": [
+                "Geese",
+                "Ducks",
+                "Chickens",
+                "Grouse"
+            ]
+        },
+        {
+            "question": "Sea ducks are:",
+            "answers": [
+                "Diving Ducks",
+                "Puddle Ducks",
+                "Not actually ducks",
+                "Not actually found near the ocean"
+            ]
+        }
+    ]
+}

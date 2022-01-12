@@ -1,0 +1,73 @@
+{
+    "qas": [
+        {
+            "question": "A Designated Hunter is:",
+            "answers": [
+                "A hunter responsible for feeding the community",
+                "An especially skilled hunter",
+                "A non-indigenous hunter allowed to hunt on Treaty lands",
+                "An American League player who goes to bat instead of the pitcher"
+            ]
+        },
+        {
+            "question": "Aboriginal rights belong to:",
+            "answers": [
+                "The community",
+                "Individuals who are aboriginal",
+                "Everyone",
+                "Everyone with a hunting license"
+            ]
+        },
+        {
+            "question": "'Aboriginal' is the preferred term:",
+            "answers": [
+                "No, it's 'Indigenous'.  'Aboriginal' is a policy/legislation term",
+                "No, it's 'First Nations'. 'Aboriginal' is an outmoded slang",
+                "No, it's 'Indian', because hunting laws were written by old white men."
+            ]
+        },
+        {
+            "question": "'Indigenous' includes:",
+            "answers": [
+                "First Nations, Metis, and Inuit",
+                "First Nations but not Metis or Inuit",
+                "Metis and Inuit, but not First Nations",
+                "Nobody, because it's an outmoded term used only in policy/legal documents."
+            ]
+        },
+        {
+            "question": "Status Indians are exempt from needing to obtain a hunting license:",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "First Nations who do not have traditional territory in BC and are not residing in BC are considered:",
+            "answers": [
+                "Non-residents, and need to abide by all hunting permit regulations",
+                "Residents, and do not need to abide by hunting permit regulations",
+                "Guests of resident First Nations, who may hunt local First Nations lands by permission",
+                "Foreign citizens, who must hire a local guide/outfitter in order to hunt."
+            ]
+        },
+        {
+            "question": "Access to wildlife is of incredible importance to Indigenous communities for many reasons including:",
+            "answers": [
+                "sustenance, stewardship, transmission of traditional knowledge, and spiritual reasons",
+                "Commercial gain, recreation, sustenance, and spiritual reasons",
+                "Sustenance",
+                "Spiritual Reasons"
+            ]
+        },
+        {
+            "question": "There are 198 First Nations and 34 languages in BC:",
+            "answers": [
+                "True",
+                "False.  All First Nations in BC speak the common Salish language.",
+                "False.  There are 4 First Nations, and 4 languages",
+                "False.  There are 1293 First nations, and 13 languages."
+            ]
+        }
+    ]
+}

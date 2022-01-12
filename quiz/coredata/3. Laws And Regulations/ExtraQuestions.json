@@ -1,0 +1,58 @@
+{
+    "qas": [
+        {
+            "question": "The four law-making bodies that can affect hunting and firearm use are:",
+            "answers": [
+                "Federal, provincial, municipal, and regional governments.",
+                "The FBI, The State Police, the San Francisco Police Department, and the Traffic Patrol",
+                "Animal Control Administration, BC Wildlife Federation, Municipal and regional governments",
+                "Government of Canada, Government of British Columbia, Municipal government, and The Queen"
+            ]
+        },
+        {
+            "question": "It is Legal to hunt from an aircraft:",
+            "answers": [
+                "False",
+                "True",
+                "Only fixed-wing aircraft",
+                "Only rotary-wing aircraft"
+            ]
+        },
+        {
+            "question": "The following enforcement agencies may enforce hunting laws in BC:",
+            "answers": [
+                "Conservation Officers, RCMP, Parks Rangers, Federal Fisheries Officers",
+                "Conservation Officers, RCMP, Bylaw Officers, Park rangers",
+                "Conservation Officers, Justices of the Peace, RCMP",
+                "Conservation Officers, RCMP, Park Rangers, and Town criers"
+            ]
+        },
+        {
+            "question": "In BC, it is illegal to:",
+            "answers": [
+                "Shoot wildlife from a motor vehicle or a boat propelled by a motor",
+                "Shoot wildlife from a motor vehicle when it is running",
+                "Shoot wildlife",
+                "Shoot wildlife from a motor vehicle or a bicycle"
+            ]
+        },
+        {
+            "question": "Hunting migratory game birds requires:",
+            "answers": [
+                "A Canadian Migratory Game Bird hunting permit, and a BC hunting license",
+                "A shotgun",
+                "A BC hunting license",
+                "A Canadian Migratory Game Bird hunting permit"
+            ]
+        },
+        {
+            "question": "What is the bag limit for mule deer in region 3:",
+            "answers": [
+                "1",
+                "2",
+                "3",
+                "1.5"
+            ]
+        }
+    ]
+}

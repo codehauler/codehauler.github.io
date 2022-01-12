@@ -1,0 +1,42 @@
+{
+    "qas": [
+        {
+            "question": "Aboriginal rights allow First Nations people to harvest wildlife for:",
+            "answers": [
+                "food, social and ceremonial purposes",
+                "food purposes only",
+                "commercial or bartering purposes",
+                "none of the above"
+            ]
+        },
+        {
+            "question": "In BC hunting laws may apply differently to First Nations due to recognition of Aboriginal rights",
+            "answers": [
+                "True",
+                "False"
+            ]
+        },
+        {
+            "question": "Indigenous governments may make their own laws related to hunting that apply to their community members",
+            "answers": [
+                "True",
+                "False"
+
+            ]
+        },
+        {
+            "question": "First Nations people who are residents of BC and meet the definition of Indian under the Indian Act (Canada) are required to obtain a hunting license ender the Wildlife Act if they want to hunt.",
+            "answers": [
+                "False",
+                "True"
+            ]
+        },
+        {
+            "question": "Most areas in BC are the traditional territory or treaty lands of one or several Indigenous Nations.",
+            "answers": [
+                "True",
+                "False"
+            ]
+        }
+    ]
+}

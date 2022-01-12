@@ -1,0 +1,59 @@
+{
+    "qas": [
+        {
+            "question": "The risk of getting hypothermia can occur:",
+            "answers": [
+                "All year around.",
+                "Only when it rains.",
+                "Only in the spring.",
+                "Only in the winter."
+            ]
+        },
+        {
+            "question": "3 Qualities required for clothing used in the outdoors are:",
+            "answers": [
+                "Absorbent, provides protection, and insulation",
+                "Waterproof, insulated and made of bright colours",
+                "Fashionable, waterproof, and provides protection from branches",
+                "Made of wool, rubber, and cotton."
+            ]
+        },
+        {
+            "question": "The part of the body that loses heat the quickest",
+            "answers": [
+                "Head",
+                "Hands",
+                "Feet",
+                "Back",
+                "Junk"
+            ]
+        },
+        {
+            "question": "You can only survive 3 days without:",
+            "answers": [
+                "Water",
+                "Food",
+                "Shelter",
+                "Coffee"
+            ]
+        },
+        {
+            "question": "Before entering an accident scene, it is important to:",
+            "answers": [
+                "Make the area safe by removing any hazards.",
+                "Yell for help.",
+                "Be calm and reassuring to the casualty.",
+                "Remember the ABCs of first aid."
+            ]
+        },
+        {
+            "question": "An unconscious casualty should be put in this position:",
+            "answers": [
+                "Recovery Position",
+                "Kneeling",
+                "Prone",
+                "Sitting"
+            ]
+        }
+    ]
+}

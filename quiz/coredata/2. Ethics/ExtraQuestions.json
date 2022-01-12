@@ -1,0 +1,58 @@
+{
+    "qas": [
+        {
+            "question": "Laws that govern your behaviour, when alone, or with others, are:",
+            "answers": [
+                "Personal Ethics",
+                "Code of Ethics",
+                "Law",
+                "Hunters Pledge"
+            ]
+        },
+        {
+            "question": "If you come across a snake in the wilderness, you should:",
+            "answers": [
+                "Leave it alone. Don't needlessly kill animals.",
+                "Kill it.  Kill it with fire.",
+                "Eat it, it makes you strong and powerful.",
+                "Run away, snakes can travel at 30 km/hr when provoked."
+            ]
+        },
+        {
+            "question": "The following may be used to start a campfire in the wilderness:",
+            "answers": [
+                "Dead or fallen wood.",
+                "Standing coniferous trees but not deciduous ones.",
+                "Gasoline and testosterone.",
+                "Tires and surplus vehicles."
+            ]
+        },
+        {
+            "question": "A person who purposely breaks the hunting laws and hunting ethics is:",
+            "answers": [
+                "A poacher.",
+                "Uncle Jim.",
+                "Just trying to put meat in the freezer.",
+                "Going to get thrown in the slammer."
+            ]
+        },
+        {
+            "question": "You can hunt on private land when:",
+            "answers": [
+                "You have permission from the landowner.",
+                "There is a general open season.",
+                "Nobody is present on the land.",
+                "You are in hot pursuit of a game animal."
+            ]
+        },
+        {
+            "question": "If you wound a game animal, you should:",
+            "answers": [
+                "Make every effort possible to find it.",
+                "Give up the chase and find another animal.",
+                "Wait 24 hours and then attempt to track it.",
+                "Fire randomly into the bush in hopes of finishing it off."
+            ]
+        }
+    ]
+}
