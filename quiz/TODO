@@ -1,6 +1,5 @@
 - add core data json
 - Write menu-json-reading code
-- checkin everything to git
-- Ensure js can be served properly from git
 - Ensure js served by git can read json files hosted by git
+
 

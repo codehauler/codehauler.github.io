@@ -1,8 +1,14 @@
 var quiz = {
-  // (A) PROPERTIES
-  // (A1) QUESTIONS & ANSWERS
-  // Q = QUESTION, O = OPTIONS, A = CORRECT ANSWER
   data: [
+  {
+      sectionName : "1.  First Section"
+  },
+  {
+      sectionName : "2.  Second Section"
+  }
+  ],
+
+  dataold: [
   {
     q : "What is the standard distance between the target and archer in Olympics?",
     o : [
@@ -80,11 +86,54 @@ var quiz = {
     quiz.hWrap.appendChild(quiz.hAns);
 
     // (B4) GO!
+    quiz.readData();
     quiz.draw();
   },
 
-  // (C) DRAW QUESTION
+  readData: () => {
+    fetch("./coredata/1.\ Conservation/ReviewTest.json")
+        .then(response => {
+          return response.json();
+        })
+          .then(jsondata => console.log(jsondata));
+  },
+
+  // Draw top level menu
   draw: () => {
+    quiz.hQn.innerHTML = "What would you like to be quizzed on?";
+    quiz.hAns.innerHTML = "";
+    for (let i in quiz.data) {
+      let radio = document.createElement("input");
+      radio.type = "radio";
+      radio.name = "quiz";
+      radio.id = "quizo" + i;
+      quiz.hAns.appendChild(radio);
+      let label = document.createElement("label");
+      label.innerHTML = quiz.data[i].sectionName;
+      label.setAttribute("for", "quizo" + i);
+      label.dataset.idx = i;
+      label.addEventListener("click", () => { quiz.select(label); });
+      quiz.hAns.appendChild(label);
+    }
+  },
+
+  // OPTION SELECTED
+  select: (option) => {
+    // DETACH ALL ONCLICK
+    let all = quiz.hAns.getElementsByTagName("label");
+    for (let label of all) {
+      label.removeEventListener("click", quiz.select);
+    }
+
+    // Identify appropriate section
+
+    
+    // Show some feedback for now
+    console.log(quiz.data[option.dataset.idx].sectionName);
+  },
+
+  // (C) DRAW QUESTION
+  drawold: () => {
     // (C1) QUESTION
     quiz.hQn.innerHTML = quiz.data[quiz.now].q;
 
@@ -106,7 +155,7 @@ var quiz = {
   },
 
   // (D) OPTION SELECTED
-  select: (option) => {
+  selectold: (option) => {
     // (D1) DETACH ALL ONCLICK
     let all = quiz.hAns.getElementsByTagName("label");
     for (let label of all) {
