@@ -1,5 +1,7 @@
-- add core data json
-- Write menu-json-reading code
-- Ensure js served by git can read json files hosted by git
+Next Up:
 
+- Implement question/answer page
+- randomize questions after each menu item choice from the main menu
+- add "all" section
+- Implement test results page
 

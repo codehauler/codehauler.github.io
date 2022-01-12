@@ -1,65 +1,20 @@
 var quiz = {
-  data: [
-  {
-      sectionName : "1.  First Section"
-  },
-  {
-      sectionName : "2.  Second Section"
-  }
+  sectionNames: [
+      "1. Conservation",
+      "2. Ethics",
+      "3. Laws And Regulations",
+      "4. Outdoor Survival and Safety",
+      "5. Firearms Safety",
+      "6. Animal Identification",
+      "7. Bird Identification",
+      "8. Indigenous Peoples",
+  ],
+  jsonFilenames: [
+      "ReviewTest.json",
+      "ExtraQuestions.json"
   ],
 
-  dataold: [
-  {
-    q : "What is the standard distance between the target and archer in Olympics?",
-    o : [
-      "50 meters",
-      "70 meters",
-      "100 meters",
-      "120 meters"
-    ],
-    a : 1 // arrays start with 0, so answer is 70 meters
-  },
-  {
-    q : "Which is the highest number on a standard roulette wheel?",
-    o : [
-      "22",
-      "24",
-      "32",
-      "36"
-    ],
-    a : 3
-  },
-  {
-    q : "How much wood could a woodchuck chuck if a woodchuck would chuck wood?",
-    o : [
-      "400 pounds",
-      "550 pounds",
-      "700 pounds",
-      "750 pounds"
-    ],
-    a : 2
-  },
-  {
-    q : "Which is the seventh planet from the sun?",
-    o : [
-      "Uranus",
-      "Earth",
-      "Pluto",
-      "Mars"
-    ],
-    a : 0
-  },
-  {
-    q : "Which is the largest ocean on Earth?",
-    o : [
-      "Atlantic Ocean",
-      "Indian Ocean",
-      "Arctic Ocean",
-      "Pacific Ocean"
-    ],
-    a : 3
-  }
-  ],
+  data: [],
 
   // (A2) HTML ELEMENTS
   hWrap: null, // HTML quiz container
@@ -86,30 +41,58 @@ var quiz = {
     quiz.hWrap.appendChild(quiz.hAns);
 
     // (B4) GO!
-    quiz.readData();
-    quiz.draw();
+    quiz.readDataAndDraw();
   },
 
-  readData: () => {
-    fetch("./coredata/1.\ Conservation/ReviewTest.json")
-        .then(response => {
-          return response.json();
-        })
-          .then(jsondata => console.log(jsondata));
+  readDataAndDraw: () => {
+    let promises = [];
+    let subpromises = [];
+
+    for (let i in quiz.sectionNames) {
+        let section = new Object();
+        quiz.data[quiz.sectionNames[i]] = new Object();
+        quiz.data[quiz.sectionNames[i]]["qas"] = [];
+
+        for (let j in quiz.jsonFilenames) {
+            let fullPath = "./coredata/"+quiz.sectionNames[i]+"/"+quiz.jsonFilenames[j];
+            console.log("Loading: "+fullPath);
+            
+            let p = fetch(fullPath)
+                .then(response => {
+                    let subpromise = response.json();
+                    subpromises.push(subpromise);
+                    return subpromise;
+                })
+                .then(jsondata => {
+                    for (let k in jsondata["qas"]) {
+                        quiz.data[quiz.sectionNames[i]]["qas"].push(jsondata["qas"][k]);
+                    }
+                });
+            promises.push(p);
+        }
+    }
+    Promise.all(promises).then(p => {
+        Promise.all(subpromises).then( sp => {
+            console.log("Finished.  quiz keys are = ");
+            console.log(Object.keys(quiz.data));
+            quiz.draw();
+        });
+    });
   },
 
   // Draw top level menu
   draw: () => {
     quiz.hQn.innerHTML = "What would you like to be quizzed on?";
     quiz.hAns.innerHTML = "";
-    for (let i in quiz.data) {
+
+    for (let i in quiz.sectionNames) {
       let radio = document.createElement("input");
       radio.type = "radio";
       radio.name = "quiz";
       radio.id = "quizo" + i;
       quiz.hAns.appendChild(radio);
       let label = document.createElement("label");
-      label.innerHTML = quiz.data[i].sectionName;
+      label.innerHTML = quiz.sectionNames[i];
       label.setAttribute("for", "quizo" + i);
       label.dataset.idx = i;
       label.addEventListener("click", () => { quiz.select(label); });
@@ -129,29 +112,10 @@ var quiz = {
 
     
     // Show some feedback for now
-    console.log(quiz.data[option.dataset.idx].sectionName);
-  },
-
-  // (C) DRAW QUESTION
-  drawold: () => {
-    // (C1) QUESTION
-    quiz.hQn.innerHTML = quiz.data[quiz.now].q;
-
-    // (C2) OPTIONS
-    quiz.hAns.innerHTML = "";
-    for (let i in quiz.data[quiz.now].o) {
-      let radio = document.createElement("input");
-      radio.type = "radio";
-      radio.name = "quiz";
-      radio.id = "quizo" + i;
-      quiz.hAns.appendChild(radio);
-      let label = document.createElement("label");
-      label.innerHTML = quiz.data[quiz.now].o[i];
-      label.setAttribute("for", "quizo" + i);
-      label.dataset.idx = i;
-      label.addEventListener("click", () => { quiz.select(label); });
-      quiz.hAns.appendChild(label);
-    }
+    console.log("section name = ");
+    console.log(quiz.sectionNames[option.dataset.idx]);
+    console.log("section qas = ");
+    console.log(quiz.data[quiz.sectionNames[option.dataset.idx]].qas);
   },
 
   // (D) OPTION SELECTED
