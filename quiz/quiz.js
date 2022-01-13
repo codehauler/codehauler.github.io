@@ -90,9 +90,27 @@ var quiz = {
         label.innerHTML = answers[i];
         label.setAttribute("for", "quizo" + i);
         label.dataset.idx = i;
-        label.addEventListener("click", () => { quiz.select(label); });
+        label.addEventListener("click", () => { quiz.select(label); }, { once: true} );
         quiz.hAns.appendChild(label);
       }
+  },
+
+  correctAllOrNoneInAnswers: (answers) => {
+      const none = "None of the above";
+      const all = "All of the above";
+      // Some answers will contain these special options; they should appear last.
+      for (let i=0; i< answers.length-1; i++) { // Just loop to the second-last element
+          let currentAnswer = answers[i];
+          if (currentAnswer == none || currentAnswer == all) {
+              // swap current element with second-last element in array, and return the result.
+              let result = [].concat(answers);
+              let temp = result[i];
+              result[i] = result[result.length-1];
+              result[result.length-1]=temp;
+              return result;
+          }
+      }
+      return answers;
   },
 
   // Draw a page
@@ -114,13 +132,12 @@ var quiz = {
       // FIXME: not sure if this is necessary, the shuffle probably fixes it anyway
       let unshuffledAnswers = [].concat(quiz.operativeQas[quiz.currentQuestionIndex].answers);
       let correctAnswer = unshuffledAnswers[0];
-
-
       let shuffledAnswers = quiz.shuffle(unshuffledAnswers);
+      let correctedShuffledAnswers = quiz.correctAllOrNoneInAnswers(shuffledAnswers);
 
       // Find the index of the correct answer - there's gotta be a better way, but fuck it
       let i=0;
-      for (let answer of shuffledAnswers) {
+      for (let answer of correctedShuffledAnswers) {
         if (answer == correctAnswer) {
             correctAnswerIndex = i;
             break;
@@ -129,11 +146,14 @@ var quiz = {
       }
       
       quiz.operativeQas[quiz.currentQuestionIndex].correctAnswerIndex = correctAnswerIndex;
-      quiz.drawRadios(quiz.operativeQas[quiz.currentQuestionIndex].question,shuffledAnswers);
+      quiz.drawRadios(quiz.operativeQas[quiz.currentQuestionIndex].question,correctedShuffledAnswers);
     } else if (quiz.state == 2) { // Show summary
-        quiz.hQn.innerHTML = `You have answered ${quiz.score} of ${quiz.data.length} correctly.`;
-        quiz.hAns.innerHTML = "";
-        // FIXME : need some items here to allow us to go back to state==0
+      quiz.hQn.innerHTML = `You have answered ${quiz.score} of ${quiz.operativeQas.length} correctly.`;
+      quiz.hAns.innerHTML = "";
+      quiz.state = 0;
+      setTimeout(() => {
+          quiz.draw(); 
+      }, 5000);
     }
   },
 
@@ -188,15 +208,14 @@ var quiz = {
             option.classList.add("correct");
         } else {
             option.classList.add("wrong");
-            let all = quiz.hAns.getElementsByTagName("label");
-            let answers = quiz.operativeQas[quiz.currentQuestionIndex].answers;
             let correctOption = all[correctAnswerIndex];
             correctOption.classList.add("correct");
         }
+
         quiz.currentQuestionIndex++;
-    } else if (quiz.state == 1 && quiz.currentQuestionIndex == quiz.operativeQas.length) {
-        quiz.state = 2; // Display summary page
-        timeout = 2000;
+        if (quiz.state == 1 && quiz.currentQuestionIndex == quiz.operativeQas.length) {
+            quiz.state = 2; // Display summary info
+        }
     }
     
 
@@ -209,7 +228,6 @@ var quiz = {
 
   // (E) RESTART QUIZ
   reset : () => {
-    quiz.now = 0;
     quiz.score = 0;
     quiz.draw();
   }
