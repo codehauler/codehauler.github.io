@@ -1,4 +1,5 @@
 var quiz = {
+  state : 0, // Display menu
   sectionNames: [
       "1. Conservation",
       "2. Ethics",
@@ -22,7 +23,6 @@ var quiz = {
   hAns: null, // HTML answers wrapper
 
   // (A3) GAME FLAGS
-  now: 0, // current question
   score: 0, // current score
 
   // (B) INIT QUIZ HTML
@@ -55,7 +55,7 @@ var quiz = {
 
         for (let j in quiz.jsonFilenames) {
             let fullPath = "./coredata/"+quiz.sectionNames[i]+"/"+quiz.jsonFilenames[j];
-            console.log("Loading: "+fullPath);
+//            console.log("Loading: "+fullPath);
             
             let p = fetch(fullPath)
                 .then(response => {
@@ -73,31 +73,70 @@ var quiz = {
     }
     Promise.all(promises).then(p => {
         Promise.all(subpromises).then( sp => {
-            console.log("Finished.  quiz keys are = ");
-            console.log(Object.keys(quiz.data));
             quiz.draw();
         });
     });
   },
 
+  drawRadios: (question, answers) => {
+      quiz.hQn.innerHTML = question;
+      quiz.hAns.innerHTML = "";
+      for (let i in answers) {
+        let radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = "quiz";
+        radio.id = "quizo" + i;
+        quiz.hAns.appendChild(radio);
+        let label = document.createElement("label");
+        label.innerHTML = answers[i];
+        label.setAttribute("for", "quizo" + i);
+        label.dataset.idx = i;
+        label.addEventListener("click", () => { quiz.select(label); });
+        quiz.hAns.appendChild(label);
+      }
+  },
+
   // Draw top level menu
   draw: () => {
-    quiz.hQn.innerHTML = "What would you like to be quizzed on?";
-    quiz.hAns.innerHTML = "";
+    if (quiz.state == 0) { // Show menu
+      console.log("Drawing Menu");
+      quiz.drawRadios("What would you like to be quizzed on?",quiz.sectionNames);
+    } else if (quiz.state == 1) { // Show question
+      console.log("Drawing Question");
+      // clone the original array of answers
+      // FIXME: not sure if this is necessary, the shuffle probably fixes it anyway
+      let unshuffledAnswers = [].concat(quiz.operativeQas[quiz.currentQuestionIndex].answers);
+      let correctAnswer = unshuffledAnswers[0];
 
-    for (let i in quiz.sectionNames) {
-      let radio = document.createElement("input");
-      radio.type = "radio";
-      radio.name = "quiz";
-      radio.id = "quizo" + i;
-      quiz.hAns.appendChild(radio);
-      let label = document.createElement("label");
-      label.innerHTML = quiz.sectionNames[i];
-      label.setAttribute("for", "quizo" + i);
-      label.dataset.idx = i;
-      label.addEventListener("click", () => { quiz.select(label); });
-      quiz.hAns.appendChild(label);
+
+      let shuffledAnswers = quiz.shuffle(unshuffledAnswers);
+
+      // Find the index of the correct answer - there's gotta be a better way, but fuck it
+      let i=0;
+      for (let answer of shuffledAnswers) {
+        if (answer == correctAnswer) {
+            correctAnswerIndex = i;
+            break;
+        }
+        i++;
+      }
+      
+      quiz.operativeQas[quiz.currentQuestionIndex].correctAnswerIndex = correctAnswerIndex;
+      quiz.drawRadios(quiz.operativeQas[quiz.currentQuestionIndex].question,shuffledAnswers);
+    } else if (quiz.state == 2) { // Show summary
+        quiz.hQn.innerHTML = `You have answered ${quiz.score} of ${quiz.data.length} correctly.`;
+        quiz.hAns.innerHTML = "";
+        // FIXME : need some items here to allow us to go back to state==0
     }
+  },
+
+  // Random shuffle list of answers.  Readable by the kind of people who like this sort of thing.
+  shuffle: (unshuffled) => {
+      shuffled = unshuffled
+            .map((value) => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value }) => value);
+      return shuffled;
   },
 
   // OPTION SELECTED
@@ -108,14 +147,44 @@ var quiz = {
       label.removeEventListener("click", quiz.select);
     }
 
-    // Identify appropriate section
+    let timeout = 0;
+    if (quiz.state ==0) { // displaying main menu
+        quiz.score = 0;
+        quiz.state = 1; // move to displaying questions
+        quiz.currentQuestionIndex = 0;
 
+        // Randomize order of questions in a shallow copy of the array
+        let unshuffled = [].concat(quiz.data[quiz.sectionNames[option.dataset.idx]].qas);
+        let shuffled = quiz.shuffle(unshuffled);
+
+        quiz.operativeQas = shuffled;
+
+        // Identify appropriate section
+    } else if (quiz.state == 1 && quiz.currentQuestionIndex < quiz.operativeQas.length) {
+        timeout = 2000;
+        let correctAnswerIndex = quiz.operativeQas[quiz.currentQuestionIndex].correctAnswerIndex;
+        let correct = option.dataset.idx == correctAnswerIndex;
+        if (correct) {
+            quiz.score++;
+            option.classList.add("correct");
+        } else {
+            option.classList.add("wrong");
+            let all = quiz.hAns.getElementsByTagName("label");
+            let answers = quiz.operativeQas[quiz.currentQuestionIndex].answers;
+            let correctOption = all[correctAnswerIndex];
+            correctOption.classList.add("correct");
+        }
+        quiz.currentQuestionIndex++;
+    } else if (quiz.state == 1 && quiz.currentQuestionIndex == quiz.operativeQas.length) {
+        quiz.state = 2; // Display summary page
+        timeout = 2000;
+    }
     
-    // Show some feedback for now
-    console.log("section name = ");
-    console.log(quiz.sectionNames[option.dataset.idx]);
-    console.log("section qas = ");
-    console.log(quiz.data[quiz.sectionNames[option.dataset.idx]].qas);
+
+    setTimeout(() => {
+      quiz.draw(); 
+    }, timeout);
+
   },
 
   // (D) OPTION SELECTED
