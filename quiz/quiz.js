@@ -126,7 +126,7 @@ var quiz = {
       quiz.sectionNames.forEach(val=>{
           let q = quiz.data[val].qas.length;
           total+=q;
-          menuItems.push(val+" ("+q+"questions)");
+          menuItems.push(val+" ("+q+" questions)");
       });
       menuItems.unshift("All ("+total+" questions)");
       console.log("menu items = ");
