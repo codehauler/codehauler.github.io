@@ -55,7 +55,6 @@ var quiz = {
 
         for (let j in quiz.jsonFilenames) {
             let fullPath = "./coredata/"+quiz.sectionNames[i]+"/"+quiz.jsonFilenames[j];
-//            console.log("Loading: "+fullPath);
             
             let p = fetch(fullPath)
                 .then(response => {
@@ -96,13 +95,21 @@ var quiz = {
       }
   },
 
-  // Draw top level menu
+  // Draw a page
   draw: () => {
     if (quiz.state == 0) { // Show menu
-      console.log("Drawing Menu");
-      quiz.drawRadios("What would you like to be quizzed on?",quiz.sectionNames);
-    } else if (quiz.state == 1) { // Show question
-      console.log("Drawing Question");
+
+// Why the frig can't I just do:
+//      let menuItems = all.concat(quiz.sectonNames);
+//    So weird
+
+      const menuItems = ["All"];
+      quiz.sectionNames.forEach(val=>{
+          menuItems.push(val);
+      });
+
+      quiz.drawRadios("Choose your topic:",menuItems);
+    } else if (quiz.state == 1) { // Show latest question
       // clone the original array of answers
       // FIXME: not sure if this is necessary, the shuffle probably fixes it anyway
       let unshuffledAnswers = [].concat(quiz.operativeQas[quiz.currentQuestionIndex].answers);
@@ -153,10 +160,22 @@ var quiz = {
         quiz.state = 1; // move to displaying questions
         quiz.currentQuestionIndex = 0;
 
-        // Randomize order of questions in a shallow copy of the array
-        let unshuffled = [].concat(quiz.data[quiz.sectionNames[option.dataset.idx]].qas);
-        let shuffled = quiz.shuffle(unshuffled);
+        let unshuffled = [];
 
+        if (option.dataset.idx == 0) { // "All" case
+            // Try to to create and destroy a zillion arrays here, use forach and push.
+            for (i in quiz.sectionNames) {
+                quiz.data[quiz.sectionNames[i]].qas.forEach(val=>{
+                    unshuffled.push(val);
+                });
+            }
+        } else {
+            // Randomize order of questions in a shallow copy of the array
+            // use idx-1 because idx=0 is the "All" option.
+            unshuffled = [].concat(quiz.data[quiz.sectionNames[option.dataset.idx-1]].qas);
+        }
+
+        let shuffled = quiz.shuffle(unshuffled);
         quiz.operativeQas = shuffled;
 
         // Identify appropriate section
@@ -187,35 +206,6 @@ var quiz = {
 
   },
 
-  // (D) OPTION SELECTED
-  selectold: (option) => {
-    // (D1) DETACH ALL ONCLICK
-    let all = quiz.hAns.getElementsByTagName("label");
-    for (let label of all) {
-      label.removeEventListener("click", quiz.select);
-    }
-
-    // (D2) CHECK IF CORRECT
-    let correct = option.dataset.idx == quiz.data[quiz.now].a;
-    if (correct) {
-      quiz.score++;
-      option.classList.add("correct");
-    } else {
-      option.classList.add("wrong");
-      let correctOption = all[quiz.data[quiz.now].a];
-      correctOption.classList.add("correct");
-    }
-
-    // (D3) NEXT QUESTION OR END GAME
-    quiz.now++;
-    setTimeout(() => {
-      if (quiz.now < quiz.data.length) { quiz.draw(); }
-      else {
-        quiz.hQn.innerHTML = `You have answered ${quiz.score} of ${quiz.data.length} correctly.`;
-        quiz.hAns.innerHTML = "";
-      }
-    }, 2000);
-  },
 
   // (E) RESTART QUIZ
   reset : () => {
