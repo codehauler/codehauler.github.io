@@ -121,11 +121,16 @@ var quiz = {
 //      let menuItems = all.concat(quiz.sectonNames);
 //    So weird
 
-      const menuItems = ["All"];
+      const menuItems = [];
+      let total = 0;
       quiz.sectionNames.forEach(val=>{
-          menuItems.push(val);
+          let q = quiz.data[val].qas.length;
+          total+=q;
+          menuItems.push(val+" ("+q+"questions)");
       });
-
+      menuItems.unshift("All ("+total+" questions)");
+      console.log("menu items = ");
+      console.log(menuItems);
       quiz.drawRadios("Choose your topic:",menuItems);
     } else if (quiz.state == 1) { // Show latest question
       // clone the original array of answers
